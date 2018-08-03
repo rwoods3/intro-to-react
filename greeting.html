@@ -20,8 +20,19 @@
          }
        }
  
+       class CustomButton extends React.Component {
+         render() {
+           return (
+             <button>{this.props.value}</button>
+           );
+         }
+       }
+
        ReactDOM.render(
-         <Greeting />, document.getElementById('app')
+         <div>
+           <Greeting />
+           <CustomButton value="Hello World"></CustomButton>
+         </div>, document.getElementById('app')
        ); 
     </script>
   </body>
